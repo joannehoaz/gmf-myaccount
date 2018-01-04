@@ -77,6 +77,28 @@
             <groupId>javax.servlet</groupId>
             <artifactId>servlet-api</artifactId>
         </dependency>
+		<dependency>
+    		<groupId>org.apache.sling</groupId>
+    		<artifactId>org.apache.sling.api</artifactId>
+    	</dependency>
+    	<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+    		<groupId>commons-io</groupId>
+    		<artifactId>commons-io</artifactId>
+		</dependency>
+		<!--GMF Commons web services and Core dependency-->
+        <dependency>
+            <groupId>com.gmf.cms</groupId>
+            <artifactId>gmf-commons.webservices</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.gmf.cms</groupId>
+            <artifactId>gmf-commons.core</artifactId>
+        </dependency>
+		<dependency>
+    		<groupId>com.adobe.cq</groupId>
+    		<artifactId>core.wcm.components.core</artifactId>
+		</dependency>
         <dependency>
             <groupId>com.adobe.aem</groupId>
             <artifactId>uber-jar</artifactId>
@@ -98,5 +120,10 @@
             <groupId>junit-addons</groupId>
             <artifactId>junit-addons</artifactId>
         </dependency>
+		<!-- testing -->
+		<dependency>
+  			<groupId>io.wcm</groupId>
+  			<artifactId>io.wcm.testing.aem-mock</artifactId>
+		</dependency>
     </dependencies>
 </project>
