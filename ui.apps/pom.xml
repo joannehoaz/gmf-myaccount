@@ -51,6 +51,7 @@
             <!-- define the resources that will go into the package -->
             <resource>
                 <directory>${basedir}/src/main/content/jcr_root</directory>
+				<filtering>false</filtering>
                 <excludes>
                     <!-- exclude .vlt control files in the package -->
                     <exclude>**/.vlt</exclude>
@@ -64,6 +65,10 @@
                     <exclude>**/target/**</exclude>
                     <exclude>**/pom.xml</exclude>
                 </excludes>
+            </resource>
+			<resource>
+                <directory>src/main/content/META-INF/vault/definition</directory>
+                <targetPath>../vault-work/META-INF/vault/definition</targetPath>
             </resource>
         </resources>
         <plugins>
