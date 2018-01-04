@@ -25,7 +25,7 @@
     <modules>
         <module>core</module>
         <module>ui.apps</module>
-        <module>ui.content</module>
+        <!--module>ui.content</module-->
         <module>it.tests</module>
         <module>it.launcher</module>
     </modules>
@@ -183,15 +183,18 @@
                 <plugin>
                     <groupId>org.apache.sling</groupId>
                     <artifactId>htl-maven-plugin</artifactId>
-                    <version>1.0.6</version>
+                    <version>1.0.8</version>
                     <configuration>
-                        <failOnWarnings>true</failOnWarnings>
+                    <sourceDirectory>${basedir}/src/main/content/jcr_root</sourceDirectory>
+                        <failOnWarnings><!-- true -->false</failOnWarnings>
                     </configuration>
                     <executions>
                         <execution>
-                            <goals>
-                                <goal>validate</goal>
-                            </goals>
+                            <id>validate-scripts</id>
+				            <goals>
+				                <goal>validate</goal>
+				            </goals>
+				            <phase>compile</phase>
                         </execution>
                     </executions>
                 </plugin>
@@ -476,20 +479,7 @@
                 <version>1.5.11</version>
                 <scope>provided</scope>
             </dependency>
-            <!-- Adobe AEM Dependencies -->
-            <dependency>
-                <groupId>com.adobe.aem</groupId>
-                <artifactId>uber-jar</artifactId>
-                <version>6.3.0</version>
-                <classifier>apis</classifier>
-                <scope>provided</scope>
-            </dependency>
-            <dependency>
-                <groupId>com.adobe.cq</groupId>
-                <artifactId>core.wcm.components.all</artifactId>
-                <type>zip</type>
-                <version>1.0.6</version>
-            </dependency>
+
             <!-- Apache Sling Dependencies -->
             <dependency>
                 <groupId>org.apache.sling</groupId>
@@ -524,7 +514,20 @@
                 <version>5.7.4</version>
                 <scope>provided</scope>
             </dependency>
-
+			<!-- https://mvnrepository.com/artifact/org.apache.sling/org.apache.sling.api -->
+			<dependency>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>org.apache.sling.api</artifactId>
+				<version>2.16.2</version>
+				<scope>provided</scope>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+			<dependency>
+				<groupId>commons-io</groupId>
+				<artifactId>commons-io</artifactId>
+				<version>2.5</version>
+				<scope>provided</scope>
+			</dependency>	
             <!-- Testing -->
             <dependency>
                 <groupId>junit</groupId>
@@ -550,6 +553,44 @@
                 <version>1.4</version>
                 <scope>test</scope>
             </dependency>
+			<dependency>
+  				<groupId>io.wcm</groupId>
+  				<artifactId>io.wcm.testing.aem-mock</artifactId>
+  				<version>2.2.8</version>
+  				<scope>test</scope>
+			</dependency>
+			<!-- Adobe AEM Dependencies -->
+            <dependency>
+                <groupId>com.adobe.aem</groupId>
+                <artifactId>uber-jar</artifactId>
+                <version>6.3.1</version>
+                <classifier>apis</classifier>
+                <scope>provided</scope>
+            </dependency>
+			<dependency>
+    			<groupId>com.adobe.cq</groupId>
+    			<artifactId>core.wcm.components.core</artifactId>
+    			<version>1.1.0</version>
+    			<scope>provided</scope>
+			</dependency>
+            <dependency>
+                <groupId>com.adobe.cq</groupId>
+                <artifactId>core.wcm.components.all</artifactId>
+                <type>zip</type>
+                <version>1.1.0</version>
+				<scope>provided</scope>
+            </dependency>
+			<!--GMF Commons web services and Core dependency-->
+	        <dependency>
+	            <groupId>com.gmf.cms</groupId>
+	            <artifactId>gmf-commons.webservices</artifactId>
+	            <version>1.0-SNAPSHOT</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>com.gmf.cms</groupId>
+	            <artifactId>gmf-commons.core</artifactId>
+	            <version>1.0-SNAPSHOT</version>
+	        </dependency>
         </dependencies>
     </dependencyManagement>
 
