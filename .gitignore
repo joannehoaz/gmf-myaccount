@@ -70,7 +70,28 @@ buildNumber.properties
 
 ### Vault ###
 .vlt
+target/
+*/bin/
+.vlt-sync.log
+.vlt-sync-config.properties
+.DS_Store
 
 ### IntelliJ ###
 .idea/
 *.iml
+
+### IDE ###
+maven-eclipse.xml
+*.ipr
+*.iws
+
+### local dev ###
+/local-instance/
+### vlt directories ###
+content/src/main/content/jcr_root/.content.xml
+content/src/main/content/jcr_root/apps/.content.xml
+content/src/main/content/jcr_root/etc/.content.xml
+content/src/main/content/jcr_root/etc/designs/.content.xml
+content/src/main/content/jcr_root/etc/clientlibs/.content.xml
+.pmd
+
