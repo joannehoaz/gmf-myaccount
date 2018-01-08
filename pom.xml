@@ -484,7 +484,7 @@
             <dependency>
                 <groupId>org.apache.sling</groupId>
                 <artifactId>org.apache.sling.models.api</artifactId>
-                <version>1.0.0</version>
+                <version>1.3.0</version>
                 <scope>provided</scope>
             </dependency>
             <!-- Servlet API -->
@@ -512,6 +512,25 @@
                 <groupId>com.day.cq.wcm</groupId>
                 <artifactId>cq-wcm-taglib</artifactId>
                 <version>5.7.4</version>
+                <scope>provided</scope>
+            </dependency>
+            <!-- Jackson -->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-annotations</artifactId>
+                <version>2.3.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.3.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>1</version>
                 <scope>provided</scope>
             </dependency>
 			<!-- https://mvnrepository.com/artifact/org.apache.sling/org.apache.sling.api -->
@@ -580,6 +599,12 @@
                 <version>1.1.0</version>
 				<scope>provided</scope>
             </dependency>
+            <dependency>
+            		<groupId>com.adobe.cq</groupId>
+            		<artifactId>com.adobe.cq.export.json</artifactId>
+            		<version>0.0.12</version>
+            		<scope>provided</scope>
+        		</dependency>
 			<!--GMF Commons web services and Core dependency-->
 	        <dependency>
 	            <groupId>com.gmf.cms</groupId>
