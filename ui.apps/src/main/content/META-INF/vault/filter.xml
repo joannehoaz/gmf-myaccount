@@ -2,4 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/apps/gmf-myaccount"/>
     <!--filter root="/apps/sling" /-->
+	<filter root="/etc/designs/gmf-myaccount"/>
 </workspaceFilter>
