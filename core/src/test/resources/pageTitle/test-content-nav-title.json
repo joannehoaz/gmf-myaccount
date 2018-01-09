@@ -1,0 +1,53 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy"  : "admin",
+    "jcr:created"    : "Wed Jan 10 2018 15:56:31 GMT+0100",
+    "jcr:content"    : {
+        "jcr:primaryType"   : "cq:PageContent",
+        "jcr:createdBy"     : "admin",
+        "jcr:created"       : "Wed Jan 10 2018 15:56:31 GMT+0100",
+        "cq:lastModified"   : "Wed Jan 10 2018 16:14:51 GMT+0100",
+        "jcr:title"         : "Template Jcr Title",
+        "navTitle"          : "Template Navigation Title",
+        "sling:resourceType": "gmf-myaccount/components/structure/contentPage",
+        "cq:lastModifiedBy" : "admin",
+        "title-jcr-title": {
+            "jcr:primaryType"   : "nt:unstructured",
+            "jcr:createdBy"     : "admin",
+            "jcr:title"         : "Hello World",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created"       : "Wed Jan 10 2018 15:58:25 GMT+0100",
+            "jcr:lastModified"  : "Wed Jan 10 2018 16:14:51 GMT+0100",
+            "sling:resourceType": "gmf-myaccount/components/content/pageTitle"
+        },
+        "title-noprops" : {
+            "jcr:primaryType"   : "nt:unstructured",
+            "jcr:createdBy"     : "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created"       : "Wed Jan 10 2018 15:58:25 GMT+0100",
+            "jcr:lastModified"  : "Wed Jan 10 2018 16:14:51 GMT+0100",
+            "sling:resourceType": "gmf-myaccount/components/content/pageTitle"
+        },
+        "par"               : {
+            "jcr:primaryType"     : "nt:unstructured",
+            "sling:resourceType"  : "wcm/foundation/components/responsivegrid",
+            "title-jcr-title"     : {
+                "jcr:primaryType"   : "nt:unstructured",
+                "jcr:createdBy"     : "admin",
+                "jcr:title"         : "Hello World",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created"       : "Wed Jan 10 2018 15:58:25 GMT+0100",
+                "jcr:lastModified"  : "Wed Jan 10 2018 16:14:51 GMT+0100",
+                "sling:resourceType": "gmf-myaccount/components/content/pageTitle"
+            },
+            "title-noprops" : {
+                "jcr:primaryType"   : "nt:unstructured",
+                "jcr:createdBy"     : "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created"       : "Wed Jan 10 2018 15:58:25 GMT+0100",
+                "jcr:lastModified"  : "Wed Jan 10 2018 16:14:51 GMT+0100",
+                "sling:resourceType": "gmf-myaccount/components/content/pageTitle"
+            }
+        }
+    }
+}
