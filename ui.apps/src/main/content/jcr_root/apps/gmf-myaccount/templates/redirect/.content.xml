@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Page that can be used as a folder/container. When a user visits the URL they will be redirected to a valid AEM page."
+    jcr:primaryType="cq:Template"
+    jcr:title="GMF MyAccount Redirect Page"
+    allowedPaths="[/content/gmf-myaccount/.+,/content/gmf/\\w{2\,3}_{0\,1}\\w{0\,3}/?]"
+    ranking="{Long}300">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="gmf-myaccount/components/structure/redirectPage">
+    </jcr:content>
+</jcr:root>
