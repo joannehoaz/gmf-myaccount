@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <content jcr:primaryType="nt:unstructured">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs jcr:primaryType="nt:unstructured">
+                <items jcr:primaryType="nt:unstructured">
+                    <advanced
+                        jcr:primaryType="nt:unstructured">
+						<items jcr:primaryType="nt:unstructured">
+							<column jcr:primaryType="nt:unstructured">
+                                <items jcr:primaryType="nt:unstructured">
+									<section1 jcr:primaryType="nt:unstructured"
+											  cq:showOnCreate="{Boolean}true">
+										<items jcr:primaryType="nt:unstructured">
+											<redirect
+                                                jcr:primaryType="nt:unstructured"
+												cq:showOnCreate="{Boolean}true"
+												sling:orderBefore="designs"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Redirect Target"
+                                                name="./redirectTarget"
+                                                renderReadOnly="{Boolean}true"
+                                                rootPath="/content/gmf">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-msm-lockable="redirectTarget"/>
+                                            </redirect>
+										</items>
+									</section1>
+								</items>
+							</column>
+						</items>
+					</advanced>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
