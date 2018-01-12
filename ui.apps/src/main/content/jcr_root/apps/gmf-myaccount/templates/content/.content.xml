@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="GMF MyAccount main content template."
+    jcr:primaryType="cq:Template"
+    jcr:title="GMF MyAccount Content Page"
+    allowedPaths="[/content/gmf-myaccount/.+,/content/gmf/\\w{2\,3}_{0\,1}\\w{0\,3}/.+]"
+    ranking="{Long}100">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+		cq:designPath="/etc/designs/gmf-myaccount"
+		cq:deviceGroups="[/etc/mobile/groups/responsive]"
+        sling:resourceType="gmf-myaccount/components/structure/contentPage">
+		<header
+           	jcr:primaryType="nt:unstructured"
+           	sling:resourceType="gmf-myaccount/components/structure/header"/>
+		<pageTitle
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="gmf-myaccount/components/content/pageTitle"/>
+		<mainPar
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="wcm/foundation/components/responsivegrid">
+			<cq:responsive jcr:primaryType="nt:unstructured"/>
+		</mainPar>
+		<footer
+			jcr:primaryType="nt:unstructured"
+			sling:resourceType="gmf-myaccount/components/structure/footer"/>
+		<cq:responsive
+			jcr:primaryType="nt:unstructured">
+			<breakpoints jcr:primaryType="nt:unstructured">
+				<phone 
+					jcr:primaryType="nt:unstructured"
+					title="Smaller Screen"
+					width="{Long}650"/>
+				<tablet
+					jcr:primaryType="nt:unstructured"
+					title="Tablet"
+					width="{Long}1200"/>
+			</breakpoints>
+		</cq:responsive>
+    </jcr:content>
+</jcr:root>
