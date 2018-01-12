@@ -99,6 +99,11 @@
     			<groupId>commons-io</groupId>
     			<artifactId>commons-io</artifactId>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+    			<groupId>org.apache.commons</groupId>
+    			<artifactId>commons-lang3</artifactId>
+		</dependency>
 		<!--GMF Commons web services and Core dependency-->
         <dependency>
             <groupId>com.gmf.cms</groupId>
