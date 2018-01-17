@@ -15,4 +15,9 @@
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
 <sly data-sly-resource="${'header' @ resourceType='gmf-myaccount/components/structure/header'}"/>
 <sly data-sly-include="content.html"></sly>
-<sly data-sly-resource="${'footer' @ resourceType='gmf-myaccount/components/structure/footer', wcmmode='disabled'}"/>
+<div class="container-fluid">
+	<div class="row">
+		<footer class="contentinfo" data-sly-resource="${'footer' @ resourceType='gmf-myaccount/components/structure/footer', wcmmode='disabled'}"/>
+	</div>
+	<div class="nav-hide"></div>
+</div>
