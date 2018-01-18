@@ -10,8 +10,11 @@ public class MyAccountConstants {
 	
 	// TODO move constants to gmf-commons
 	public static final String SLASH = "/";
+	public static final String UNDERSCORE = "_";
+	public static final String HYPHEN = "-";
 	public static final String CONTENT_GMF_PATH = "/content/gmf/";
 	public static final String LANGUAGE_ENGLISH = "en";
 	public static final String FOOTER_CONTENT_PATH = SLASH + JcrConstants.JCR_CONTENT + "/footer";
 	public static final String HEADER_CONTENT_PATH = SLASH + JcrConstants.JCR_CONTENT + "/header";
+	public static final String MY_ACCOUNT_SERVICE_USER = "gmf-myaccount-service-user";
 }
