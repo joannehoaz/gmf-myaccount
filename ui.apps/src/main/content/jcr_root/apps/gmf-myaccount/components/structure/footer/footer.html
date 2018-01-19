@@ -1,0 +1,55 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2018 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<sly data-sly-use.footer="com.gmf.myaccount.cms.core.models.Footer" 
+	 data-sly-use.template="core/wcm/components/commons/v1/templates.html"/>
+<div class="container">
+	<div class="row">
+		<div class="brands col-xs-12" data-sly-test="${footer.brandLinks}">
+			<ul class="list-inline" data-sly-list.brandItem="${footer.brandLinks}">
+				<li>
+					<a href="${brandItem.finalLink}" data-sly-attribute.target="${brandItem.targetAttribute}"><img src="${brandItem.iconPath}" alt="${brandItem.altAttribute @ i18n}"></a>
+				</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+		<div class="related col-xs-12" data-sly-test="${footer.dealerLinks}">
+			<ul class="list-inline" data-sly-list.dealerItem="${footer.dealerLinks}">
+				<li>
+					<a href="${dealerItem.finalLink}" data-sly-attribute.target="${dealerItem.targetAttribute}">${dealerItem.title @ i18n}</a>
+				</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+		<div class="social col-md-3" data-sly-test="${footer.socialLinks}">
+			<ul class="list-inline" data-sly-list.socialItem="${footer.socialLinks}">
+				<li>
+					<a href="${socialItem.finalLink}" data-sly-attribute.target="${socialItem.targetAttribute}"><img class="icon-small" src="${socialItem.iconPath}" alt="${socialItem.altAttribute @ i18n}"></a>
+                </li>
+            </ul>
+        </div>
+		<div class="copyright col-md-9">
+            <p data-sly-test="${footer.copyright}">${footer.copyright @ i18n}</p>
+            <ul class="list-inline" data-sly-list.siteItem="${footer.siteLinks}" data-sly-test="${footer.siteLinks}">
+               <li>
+				   <a href="${siteItem.finalLink}" data-sly-attribute.target="${siteItem.targetAttribute}">${siteItem.title @ i18n}</a>
+				</li>
+            </ul>
+         </div>
+	</div>
+</div>
+<sly data-sly-call="${template.placeholder @ isEmpty=footer.brandLinks.size == 0}"></sly>
