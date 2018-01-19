@@ -133,22 +133,27 @@ public class FooterImpl implements Footer {
 		}
 	}
 	
+	@Override
 	public List<Link> getBrandLinks() {
 		return this.brandLinks;
 	}
 	
+	@Override
 	public List<Link> getDealerLinks() {
 		return this.dealerLinks;
 	}
 	
+	@Override
 	public List<Link> getSocialLinks() {
 		return this.socialLinks;
 	}
 	
+	@Override
 	public List<Link> getSiteLinks() {
 		return this.siteLinks;
 	}
 	
+	@Override
 	public String getCopyright() {
 		return this.copyright;
 	}
